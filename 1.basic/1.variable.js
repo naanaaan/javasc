@@ -10,6 +10,7 @@ let $user
 let userName
 let user_name
 
+//function에 할당하는 변수를 보통 const로 선언함
 const x = 1
 // x = 2
 
