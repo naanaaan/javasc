@@ -45,6 +45,6 @@ console.log(NaN > 0, NaN >= 0, NaN == 0) //다 false  null만 예외
 
 console.log(undefined == undefined, null == null, NaN == NaN) // true true false
 
-a == b //true
-a == 1 //false
-1 == a //false
+// a == b //true
+// a == 1 //false
+// 1 == a //false

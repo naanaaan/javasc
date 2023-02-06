@@ -22,7 +22,7 @@ console.log(sayHello('rebecca', 'hello'))
 //     console.log('HI')
 // }
 // sayHi()
-//답---------------------
+//답--------------------- 
 const sayHi= function(){
       console.log('HI')
  }
