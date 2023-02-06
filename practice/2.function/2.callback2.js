@@ -7,11 +7,10 @@ function sayEven(num){
 }
 
 function lookNum(fn1, fn2){
-    const num = parseInt(Math.random() * 10) + 1
+    const num = parseInt(Math.random * 10) + 1
     if(num % 2 != 0) fn1(num)
-    else fn2(num) 
+    else fn2(num)
 }
-
 lookNum(sayOdd, sayEven)
 
 let chef1 = function(food){
@@ -20,10 +19,11 @@ let chef1 = function(food){
 
 let chef2 = function(food){
     return `매운 ${food}`
+
 }
 
-let waiter =function(chef, food){
+let waiter = function(food, chef){
     return chef(food)
 }
 
-console.log(waiter(chef1, '짜장면'))
+console.log(waiter('짜장면', chef1))

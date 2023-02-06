@@ -1,5 +1,5 @@
 //실행하면 property먼저 생성후 실행문실행하기때문에 위에서 sayHi()써도 가능함.
-sayHi()
+// sayHi()
 
 let userName = 'neo' //neo할당됨 
 //jquery에서 주로씀
@@ -9,7 +9,7 @@ function sayHi(){
 
 sayHi()
 
-sayHello()          //이건 안됨 
+// sayHello()          //이건 안됨 
 //react에서 주로 씀
 const sayHello = function(){
     console.log('Hello,', userName)
