@@ -31,3 +31,20 @@ let player1 = new Player('최한석')
 let player2 = new Player('한아름')
 let player3 = new Player('양승일')
 console.log(player3.kick(player2.pass(player1.pass(ball))))
+
+function Food(foodName) {
+    this.foodName = foodName
+}
+
+function Mom() {
+    this.cook = foodName => new Food(foodName)
+}
+
+function Child() {
+    this.eat = food => console.log(food)
+}
+
+const mom = new Mom()
+const child = new Child()
+
+child.eat(mom.cook('짜장면'))

@@ -1,6 +1,8 @@
-let timeId = setInterval(() => console.log('trick'), 1000)
+let timeId = setInterval(() =>{
+    console.log('hi')
+}, 1000)
 
-setTimeout(() =>{
+setTimeout(()=>{
     clearInterval(timeId)
-    console.log(stop)
+    console.log('end')
 }, 3000)

@@ -17,17 +17,14 @@ user = {
 console.log(user.userName)
 console.log(user.userName.first)
 user.sing()
-
 console.log(user['nick name'])
-console.log(user['userName']['first'])
+console.log(...user.intersts)
 
 user.userName.first = 'john'
 user['age'] = 50
 console.log(user.userName.first, user.age)
 
 let key = 'nick name'
-console.log(user[key])
-key = 'age'
 console.log(user[key])
 
 let man = {
