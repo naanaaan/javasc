@@ -171,3 +171,16 @@ console.log(interest)//이건 전부 리턴
 const elements = items.map((item, i) => 
     `<div>${item.itemName}: ${item.price}</div>`)
 console.log(elements)
+
+//
+const totalPrice = items.reduce((total, item) =>{
+    total += item.price
+    return total
+}, 0)//0은 total의 초기값
+console.log(totalPrice)
+
+
+//
+let isExit = items.some(item => item.itemName == 'book')//한개이상
+isExit = items.every(item => item.itemName == 'book')//모두
+console.log(isExit)
