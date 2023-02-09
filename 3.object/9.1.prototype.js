@@ -20,3 +20,23 @@ console.log(Rabbit.prototype)
 //여기에는 Rabbit의 주소를 가지고 있음
 rabbit = new Rabbit('white')
 console.log(rabbit.isAlive)
+
+
+function Duck(duckName) {
+    this.duckName = duckName
+}
+
+console.log(Duck.prototype) //plain object.
+console.log(Duck.prototype.constructor) //Duck function을 가리킨다.
+console.log(Duck.prototype.constructor == Duck) //true임을 확인.
+
+let duck = new Duck('duck')
+console.log(duck.__proto__)//duck객체의 prototype값을 읽는다. == Duck.prototype
+console.log(duck.__proto__.constructor)// == Duck.prototype.constructor
+
+
+let duck2 = new Duck('duck2')
+console.log(duck2.__proto__ == duck.__proto__) //두 객체의 prototype이 같음을 확인.
+
+let duck3 = new duck.__proto__.constructor('duck')
+duck3 = new duck.constructor('duck')
